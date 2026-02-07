@@ -7,14 +7,14 @@ const projects = [
     id: 1,
     title: "Toy Store E-commerce Analysis",
     description: "A powerful analytics project for tracking customer behavior and sales trends.",
-    image: "/assets/toy-store.jpg",
+    image: "public/assets/images/toy-store.jpg",
     link: "https://drive.google.com/file/d/1nCtKUSoKPr-GZc3um9xBkGElBS7rIKAL/view?usp=sharing"
   },
   {
     id: 2,
     title: "Coming Soon",
     description: "Cooming Soon - On process to build this project",
-    image: "/assets/coming-soon.png",
+    image: "public/assets/images/coming-soon.png",
     link: "#"
   }
 ];
@@ -63,3 +63,4 @@ export default function Projects() {
     </div>
   );
 }
+
