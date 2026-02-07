@@ -36,7 +36,6 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto flex justify-between items-center">
-        {/* --- BAGIAN KIRI: LOGO HOME --- */}
         <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
@@ -45,6 +44,7 @@ export default function Navbar() {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
           >
             <path
               d="M277.8 8.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1S18.8 272 32 272l16 0 0 176c0 35.3 28.7 64 64 64l288 0c35.3 0 64-28.7 64-64l0-176 16 0c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8-35.1l-224-208zM240 320l32 0c26.5 0 48 21.5 48 48l0 96-128 0 0-96c0-26.5 21.5-48 48-48z"
@@ -52,7 +52,6 @@ export default function Navbar() {
           </svg>
         </motion.div>
 
-        {/* --- BAGIAN TENGAH: MENU (Desktop) --- */}
         <ul className="hidden lg:flex items-center gap-x-7 font-semibold">
           {["about", "skills", "projects", "contact"].map((section) => (
             <motion.li
@@ -71,7 +70,6 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* --- BAGIAN KANAN: RESUME (Desktop) & MENU (Mobile) --- */}
         <div className="flex items-center gap-4">
           <motion.a
             href="https://drive.google.com/file/d/1IY5xJFIqgBzD70q6F1tXmBd5pVGDI8vi/view?usp=sharing"
@@ -84,7 +82,6 @@ export default function Navbar() {
             </span>
           </motion.a>
 
-          {/* Hamburger Menu untuk Mobile */}
           <motion.button
             className="lg:hidden text-2xl"
             onClick={() => setIsOpen(!isOpen)}
@@ -95,7 +92,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -136,4 +132,3 @@ export default function Navbar() {
     </motion.nav>
   );
 }
-
