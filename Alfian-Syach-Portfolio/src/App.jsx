@@ -1,12 +1,12 @@
 import React from 'react'
-import Home from '@/components/pages/Home'
-import Skills from '@/components/sections/Skills'
-import Navbar from '@/components/layout/Navbar'
-import About from '@/components/sections/About'
-import Footer from '@/components/layout/Footer'
-import Projects from '@/components/sections/Projects'
-import Contact from '@/components/sections/Contact'
-import CustomCursor from '@/components/utils/CursorAnimation'
+import Home from '@/components/pages/Home.jsx'
+import Skills from '@/components/sections/Skills.jsx'
+import Navbar from '@/components/layout/Navbar.jsx'
+import About from '@/components/sections/About.jsx'
+import Footer from '@/components/layout/Footer.jsx'
+import Projects from '@/components/sections/Projects.jsx'
+import Contact from '@/components/sections/Contact.jsx'
+import CustomCursor from '@/components/utils/CursorAnimation.jsx'
 
 export default function App() {
   return (
@@ -23,4 +23,5 @@ export default function App() {
     </div>
   )
 }
+
 
