@@ -22,7 +22,7 @@ export default function Skills() {
       period: "Jul 2024 - Present",
       description:
         "Managed GrabFood Dine Out operations and merchant onboarding while streamlining escalation workflows through automation. Developed data queries to analyze transaction trends and reduce manual tasks, driving scalable, data-driven reporting and continuous process improvement.",
-      logo: "/assets/grab-logo.svg",
+      logo: "public/assets/images/grab-logo.svg",
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ export default function Skills() {
       period: "Apr 2024 - Jul 2024",
       description:
         "Managed sales performance analysis across multiple products, delivering weekly and monthly reports for strategic reviews. Ensured high data reliability by validating and cleaning datasets from 184 sub-distributors, proactively resolving anomalies to maintain end-to-end data quality.",
-      logo: "/assets/icon-company.png",
+      logo: "public/assets/images/icon-company.png",
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ export default function Skills() {
       period: "Aug 2023 - Dec 2023",
       description:
         "Analyzed AR/AP trends and cash flow to ensure financial sustainability throughout project lifecycles. Audited sales invoice practices against SOPs to close process gaps, significantly improving collection efficiency, cycle times, and cash flow predictability through structured data management.",
-      logo: "/assets/icon-company.png",
+      logo: "public/assets/images/icon-company.png",
     },
   ]);
 
@@ -127,3 +127,4 @@ export default function Skills() {
     </div>
   );
 }
+
