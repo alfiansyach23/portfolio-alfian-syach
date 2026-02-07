@@ -11,8 +11,9 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      // Ini yang akan memperbaiki error "Rollup failed to resolve import @"
       "@": path.resolve(__dirname, "./src"),
     },
+    // Tambahkan baris di bawah ini:
+    extensions: ['.mjs', '.js', '.mts', '.ts', '.jsx', '.tsx', '.json']
   },
 })
