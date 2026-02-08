@@ -19,7 +19,7 @@ const socialLinks = [
   },
   {
     icon: FaInstagramSquare,
-    href: "https://instagram.com/username-kamu",
+    href: "https://instagram.com/alfian1206/",
     label: "Instagram",
   },
   {
@@ -127,5 +127,6 @@ export default function Home() {
     </div>
   );
 }
+
 
 
