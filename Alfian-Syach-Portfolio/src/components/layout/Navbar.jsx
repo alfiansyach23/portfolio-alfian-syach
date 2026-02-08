@@ -68,8 +68,11 @@ export default function Navbar() {
         </ul>
 
         <div className="flex items-center gap-4">
+          {/* RESUME DESKTOP */}
           <motion.a
             href="https://drive.google.com/file/d/1IY5xJFIqgBzD70q6F1tXmBd5pVGDI8vi/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden relative lg:inline-block px-4 py-2 font-medium group"
           >
             <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
@@ -79,6 +82,19 @@ export default function Navbar() {
             </span>
           </motion.a>
 
+          {/* RESUME MOBILE */}
+          <motion.a
+            href="https://drive.google.com/file/d/1IY5xJFIqgBzD70q6F1tXmBd5pVGDI8vi/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="lg:hidden p-2 border-2 border-black rounded-md"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <TbDownload size={20} />
+          </motion.a>
+
+          {/* HAMBURGER */}
           <motion.button
             className="lg:hidden text-2xl"
             onClick={() => setIsOpen(!isOpen)}
@@ -116,3 +132,4 @@ export default function Navbar() {
     </motion.nav>
   );
 }
+
